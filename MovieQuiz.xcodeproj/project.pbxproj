@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E54E2132EEC0B0B00534B28 /* QuizQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54E2102EEC0B0B00534B28 /* QuizQuestion.swift */; };
+		8E54E2142EEC0B0B00534B28 /* QuizResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54E2112EEC0B0B00534B28 /* QuizResultsViewModel.swift */; };
+		8E54E2152EEC0B0B00534B28 /* QuizStepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54E2122EEC0B0B00534B28 /* QuizStepViewModel.swift */; };
+		8E54E2182EEC0B4D00534B28 /*  QuizQuestion+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54E2162EEC0B4D00534B28 /*  QuizQuestion+Mock.swift */; };
 		AD1ABAB22831907B00B3E448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1ABAB12831907B00B3E448 /* AppDelegate.swift */; };
 		AD1ABAB42831907B00B3E448 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1ABAB32831907B00B3E448 /* SceneDelegate.swift */; };
 		AD1ABAB62831907B00B3E448 /* MovieQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1ABAB52831907B00B3E448 /* MovieQuizViewController.swift */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E54E2102EEC0B0B00534B28 /* QuizQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestion.swift; sourceTree = "<group>"; };
+		8E54E2112EEC0B0B00534B28 /* QuizResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultsViewModel.swift; sourceTree = "<group>"; };
+		8E54E2122EEC0B0B00534B28 /* QuizStepViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizStepViewModel.swift; sourceTree = "<group>"; };
+		8E54E2162EEC0B4D00534B28 /*  QuizQuestion+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " QuizQuestion+Mock.swift"; sourceTree = "<group>"; };
 		AD1ABAAE2831907B00B3E448 /* MovieQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD1ABAB12831907B00B3E448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD1ABAB32831907B00B3E448 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +58,9 @@
 		611342392B701CF6003FC2A4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8E54E2102EEC0B0B00534B28 /* QuizQuestion.swift */,
+				8E54E2112EEC0B0B00534B28 /* QuizResultsViewModel.swift */,
+				8E54E2122EEC0B0B00534B28 /* QuizStepViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -59,6 +70,14 @@
 			children = (
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		8E54E2172EEC0B4D00534B28 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8E54E2162EEC0B4D00534B28 /*  QuizQuestion+Mock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		8F4738322848DE2A005DF65E /* Presentation */ = {
@@ -73,6 +92,7 @@
 		8F4738332848DE46005DF65E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8E54E2172EEC0B4D00534B28 /* Mocks */,
 				8EF8CF822ECFC329008171FF /* Fonts */,
 				AD1ABABC2831907F00B3E448 /* LaunchScreen.storyboard */,
 				AD1ABABA2831907F00B3E448 /* Assets.xcassets */,
@@ -196,6 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E54E2132EEC0B0B00534B28 /* QuizQuestion.swift in Sources */,
+				8E54E2182EEC0B4D00534B28 /*  QuizQuestion+Mock.swift in Sources */,
+				8E54E2142EEC0B0B00534B28 /* QuizResultsViewModel.swift in Sources */,
+				8E54E2152EEC0B0B00534B28 /* QuizStepViewModel.swift in Sources */,
 				AD5EE5DE284D7887003966EF /* UIColor+Extensions.swift in Sources */,
 				AD7AFA552836189F00399704 /* Array+Extensions.swift in Sources */,
 				AD1ABAB62831907B00B3E448 /* MovieQuizViewController.swift in Sources */,
