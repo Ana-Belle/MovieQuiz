@@ -27,9 +27,7 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate  
     
     // MARK: - QuestionFactoryDelegate
     func didReceiveNextQuestion(question: QuizQuestion?) {
-        guard let question = question else {
-            return
-        }
+        guard let question else { return }
         
         currentQuestion = question
         let viewModel = convert(question)
@@ -77,7 +75,7 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate  
             showResults()
         } else {
             currentQuestionIndex += 1
-            self.questionFactory.requestNextQuestion()
+            questionFactory.requestNextQuestion()
         }
     }
     
@@ -99,7 +97,7 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate  
     
     private func show(alert result: QuizResultsViewModel) {
         let model = AlertModel(title: result.title, message: result.text, buttonText: result.buttonText) { [weak self] in
-            guard let self = self else { return }
+            guard let self else { return }
             
             self.restartGame()
         }
@@ -124,20 +122,20 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate  
         imageView.layer.borderColor = isCorrect ? UIColor.ypGreen.cgColor : UIColor.ypRed.cgColor
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in
-            guard let self = self else { return }
+            guard let self else { return }
             self.showNextQuestionOrResults()
         }
     }
     
     // MARK: - Actions
     @IBAction private func yesButtonClicked(_ sender: Any) {
-        guard let currentQuestion = currentQuestion else { return }
+        guard let currentQuestion else { return }
         let isCorrect = currentQuestion.correctAnswer == true
         processAnswer(isCorrect)
     }
     
     @IBAction private func noButtonClicked(_ sender: Any) {
-        guard let currentQuestion = currentQuestion else { return }
+        guard let currentQuestion else { return }
         let isCorrect = currentQuestion.correctAnswer == false
         processAnswer(isCorrect)
     }
