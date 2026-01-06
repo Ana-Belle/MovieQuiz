@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_3" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -99,10 +99,16 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ebe-84-gI6">
+                                <rect key="frame" x="191" y="427" width="20" height="20"/>
+                                <color key="color" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="YP Black"/>
                         <constraints>
+                            <constraint firstItem="ebe-84-gI6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ETQ-Wt-aqJ"/>
+                            <constraint firstItem="ebe-84-gI6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GUk-oa-ujb"/>
                             <constraint firstItem="zJR-fy-SNU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="gVO-7l-uge"/>
                             <constraint firstItem="zJR-fy-SNU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nIu-Rh-Yoe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zJR-fy-SNU" secondAttribute="bottom" id="uAt-w8-c3M"/>
@@ -110,6 +116,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="ebe-84-gI6" id="ley-4w-Imd"/>
                         <outlet property="counterLabel" destination="pXY-S6-i9u" id="e7x-Nu-6fm"/>
                         <outlet property="imageView" destination="XWV-01-d9k" id="q4f-OV-Nog"/>
                         <outlet property="noButton" destination="3Xw-K2-dTc" id="qws-cn-6n5"/>
